@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Z Layout</title>
+  <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+
+  <style>
+    #wrapper {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #logo{
+      width: 500px;
+      height: 75px;
+      float: left;
+      background-color: #a9dcd8;
+      margin: 0px;
+      text-align: right;
+    }
+    #logopic{
+      float: left;
+    }
+    #footer{
+      text-align: center;
+    }
+    .clearFix{
+      clear: both;
+    }
+    #Links_frame{
+      width: 420px;
+      height: 75px;
+      float: right;
+      background-color: #a9dcd8;
+      margin: 0px;
+      text-align: right;
+    }
+    #Links{
+      margin-top: 32px;
+      margin-right: 1px;
+    }
+    .blank{
+      width: 950px;
+      height: 40px;
+      float: right;
+      background-color: #ffffff;
+      margin: 0px;
+    }
+    .person_picture_frame{
+      width: 220px;
+      height: 220px;
+      float: left;
+      border: 5px solid white;
+      background-color: #ffffff;
+    }
+    .person_picture{
+      width: 200px;
+      border-radius: 100%;
+      border: 1px solid rgb(122, 161, 158);
+      margin-top: 25px;
+      margin-left: 5px;
+    }
+    .person_information_frame1{
+      width: 720px;
+      height: 240px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .person_information1{
+      margin-top: 15px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    .person_information_frame2{
+      width: 720px;
+      height: 230px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .person_information2{
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    .article_frame1{
+      weight: 950px;
+      height: 390px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .article_form1{
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    .article_frame2{
+      weight: 950px;
+      height: 340px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .article_form2{
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    #footer{
+      text-align: center;
+    }
+    .clearFix{
+      clear: both;
+    }
+
+    /*------------------------BUTTON---------------------------*/
+    ul { /* 取消ul預設的內縮及樣式 */
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul.drop-down-menu {
+      border: #ccc 1px solid;
+      display: inline-block;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 13px;
+    }
+    ul.drop-down-menu li {
+      position: relative;
+      white-space: nowrap;
+      border-right: #ccc 1px solid;
+    }
+    ul.drop-down-menu > li:last-child {
+      border-right: none;
+    }
+    ul.drop-down-menu > li {
+      float: left; /* 只有第一層是靠左對齊*/
+    }
+    ul.drop-down-menu a {
+      background-color: #fff;
+      color: #333;
+      display: block;
+      padding: 0 30px;
+      text-decoration: none;
+      line-height: 40px;
+
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+      background-color: #37a67f;
+      color: #fff;
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+      background-color: #37a67f;
+      color: #fff;
+    }
+    ul.drop-down-menu ul {
+      border: #ccc 1px solid;
+      position: absolute;
+      z-index: 99;
+      left: -1px;
+      top: 100%;
+      min-width: 180px;
+    }
+    ul.drop-down-menu ul li {
+      border-bottom: #ccc 1px solid;
+    }
+    ul.drop-down-menu ul li:last-child {
+      border-bottom: none;
+    }
+    ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+      z-index: 999;
+      top: 10px;
+      left: 90%;
+    }
+    ul.drop-down-menu ul { /*隱藏次選單*/
+      display: none;
+    }
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+      display: block;
+    }
+    /*------------------------BUTTON---------------------------*/
+
+  </style>
+
+</head>
+<body>
+<div id = "wrapper">
+  <div id = "logo"> <!--Topic picture-->
+    <a href = "index.html"><img src = "images/internethistory_logo.png" alt = "logo" id = "logopic"></a>
+  </div>
+  <menu id = "Links_frame"> <!--Links-->
+    <div id = "Links">
+      <ul class = "drop-down-menu">
+        <li>
+          <a href = #>INTERNET HISTORY</a>
+          <ul>
+            <li><a href = "Page1.html">INTERNET & J.C.R LICKLIDER</a></li>
+            <li><a href = "Page2.html">LAWRENCE G. ROBERTS & LEONARD KLEINROCK</a></li>
+            <li><a href = "Page3.html">ROBERT KAHN & VINT CERF</a></li>
+            <li><a href = "Page4.html">ROBERT METCALFE & DAVE FARBER</a></li>
+            <li><a href = "Page5.html">RAY TOMLINSON & PAUL MOCKAPETRIS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href = "AboutUs.html">ABOUT US</a>
+        <li/>
+      </ul>
+    </div>
+  </menu>
+  <div class = "blank"></div> <!--BLANK-->
+  <div class = "person_picture_frame"> <!--1 person picture-->
+    <img src = "images/FIG9.jpg" class = "person_picture" alt = "RAY TOMLINSON">
+  </div>
+  <div class = "person_information_frame1"> <!--1 person information-->
+    <h2 class = "person_information1">
+      RAY TOMLINSON
+    </h2>
+    <p class = "person_information1">
+      Tomlinson was born in Amsterdam, New York. He attended Broadalbin Central School in nearby Broadalbin, New York. Later he attended
+      Rensselaer Polytechnic Institute (RPI) in Troy, New York where he participated in the co-op program with IBM.
+      He received a bachelor's degree in electrical engineering from RPI in 1963.
+      After graduating from RPI, he entered the Massachusetts Institute of Technology (MIT) to continue his electrical engineering
+      education.
+    </p>
+  </div>
+  <div class = "article_frame1">
+    <article class = "article_form1">
+      <p>
+        Ray Tomlinson came up with the idea while working for ARPANET, the government-funded research project that eventually became
+        the internet.
+      </p>
+      <p> In 1967, he joined the technology company of Bolt, Beranek and Newman (now BBN Technologies), where he helped develop the TENEX
+        operating system including the ARPANET Network Control Program, implementations of Telnet, and implementations on the
+        self-replicating programs Creeper and Reaper.
+      </p>
+      <p>He wrote a file transfer program called CPYNET to transfer files through the ARPANET.</p>
+      <p> Tomlinson created a program that gave users the ability to send messages between connected computers on the ARPANET system.
+      </p>
+      <p>He put the two programs together, modified the code a little bit and thus the email program was born. He also gave the world the new icon for the information age, the “@” sign which was an obvious choice as it meant that there is some user at some location. The term email was coined several years later. The email became the killer app for ARPANET.
+      </p>
+    </article>
+  </div>
+  <div class = "person_picture_frame"> <!--2 person picture-->
+    <img src = "images/FIG10.jpg" class = "person_picture" alt = "PAUL MOCKAPETRIS">
+  </div>
+  <div class = "person_information_frame2"> <!--2 person information-->
+    <h2 class = "person_information2">
+      PAUL MOCKAPETRIS
+    </h2>
+    <p class = "person_information2">
+      Paul V. Mockapetris was born in 1948 in Boston, Massachusetts, US.
+      Mockapetris graduated from the Boston Latin School in 1966, received his bachelor's degrees in physics and electrical
+      engineering from the Massachusetts Institute of Technology .
+      in 1971 and his doctorate in information and computer science from the University of California at Irvine in 1982.
+    </p>
+  </div>
+
+  <div class = "article_frame2">
+    <article class = "article_form2">
+      <p>
+        In 1983, he proposed a Domain Name System architecture in RFC 882 and RFC 883.
+      </p>
+      <p>He had recognized the problem in the early Internet (then ARPAnet) of holding name to address translations in a
+        single table on the hosts file of an operating system.
+      </p>
+      <p>Paul Mockapetris, Jon Postel and Craig Partridge created the Domain Name system, which used domain names to manage the
+        increasing number of users on the internet.
+      <p>In 1985, the first domain is registered: symbolics.com, a domain belonging to a computer manufacturer.</p>
+      <p>At USC’s Information Sciences Institute, Mockapetris recognized the problems with the early Internet
+        (then ARPAnet)’s system of holding name to address translations in a single table on a single host (HOSTS.TXT).
+      </p>
+      <p>Instead, he proposed a distributed and dynamic naming system, essentially the DNS of today.
+      </p>
+
+    </article>
+  </div>
+</div>
+<div class = "blank"></div> <!--BLANK-->
+<div> <!--footer-->
+  <footer id = "footer" class = "clearFix">
+    Tanvi Deepak Kapote & Chia-Jung Chu &#169;
+  </footer>
+</div>
+</div>
+</body>
+</html>

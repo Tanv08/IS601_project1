@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Z Layout</title>
+  <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+
+  <style>
+    #wrapper {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #logo{
+      width: 500px;
+      height: 75px;
+      float: left;
+      background-color: #a9dcd8;
+      margin: 0px;
+      text-align: right;
+    }
+    #logopic{
+      float: left;
+    }
+    #footer{
+      text-align: center;
+    }
+    .clearFix{
+      clear: both;
+    }
+    #Links_frame{
+      width: 420px;
+      height: 75px;
+      float: right;
+      background-color: #a9dcd8;
+      margin: 0px;
+      text-align: right;
+    }
+    #Links{
+      margin-top: 32px;
+      margin-right: 1px;
+    }
+    .blank{
+      width: 950px;
+      height: 40px;
+      float: right;
+      background-color: #ffffff;
+      margin: 0px;
+    }
+    .person_picture_frame{
+      width: 220px;
+      height: 220px;
+      float: left;
+      border: 5px solid white;
+      background-color: #ffffff;
+    }
+    .person_picture{
+      width: 200px;
+      border-radius: 100%;
+      border: 1px solid rgb(122, 161, 158);
+      margin-top: 25px;
+    }
+    .person_information_frame1{
+      width: 720px;
+      height: 290px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .person_information1{
+      margin-top: 15px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    .person_information_frame2{
+      width: 720px;
+      height: 280px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .person_information2{
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    .article_frame1{
+      weight: 950px;
+      height: 300px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .article_form1{
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    .article_frame2{
+      weight: 950px;
+      height: 360px;
+      float: left;
+      background-color: #c6e7e4;
+      border: 5px solid white;
+    }
+    .article_form2{
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 150px;
+    }
+    #footer{
+      text-align: center;
+    }
+    .clearFix{
+      clear: both;
+    }
+
+    /*------------------------BUTTON---------------------------*/
+    ul { /* 取消ul預設的內縮及樣式 */
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul.drop-down-menu {
+      border: #ccc 1px solid;
+      display: inline-block;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 13px;
+    }
+    ul.drop-down-menu li {
+      position: relative;
+      white-space: nowrap;
+      border-right: #ccc 1px solid;
+    }
+    ul.drop-down-menu > li:last-child {
+      border-right: none;
+    }
+    ul.drop-down-menu > li {
+      float: left; /* 只有第一層是靠左對齊*/
+    }
+    ul.drop-down-menu a {
+      background-color: #fff;
+      color: #333;
+      display: block;
+      padding: 0 30px;
+      text-decoration: none;
+      line-height: 40px;
+
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+      background-color: #37a67f;
+      color: #fff;
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+      background-color: #37a67f;
+      color: #fff;
+    }
+    ul.drop-down-menu ul {
+      border: #ccc 1px solid;
+      position: absolute;
+      z-index: 99;
+      left: -1px;
+      top: 100%;
+      min-width: 180px;
+    }
+    ul.drop-down-menu ul li {
+      border-bottom: #ccc 1px solid;
+    }
+    ul.drop-down-menu ul li:last-child {
+      border-bottom: none;
+    }
+    ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+      z-index: 999;
+      top: 10px;
+      left: 90%;
+    }
+    ul.drop-down-menu ul { /*隱藏次選單*/
+      display: none;
+    }
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+      display: block;
+    }
+    /*------------------------BUTTON---------------------------*/
+
+  </style>
+
+</head>
+<body>
+<div id = "wrapper">
+  <div id = "logo"> <!--Topic picture-->
+    <a href = "index.html"><img src = "images/internethistory_logo.png" alt = "logo" id = "logopic"></a>
+  </div>
+  <menu id = "Links_frame"> <!--Links-->
+    <div id = "Links">
+      <ul class = "drop-down-menu">
+        <li>
+          <a href = #>INTERNET HISTORY</a>
+          <ul>
+            <li><a href = "Page1.html">INTERNET & J.C.R LICKLIDER</a></li>
+            <li><a href = "Page2.html">LAWRENCE G. ROBERTS & LEONARD KLEINROCK</a></li>
+            <li><a href = "Page3.html">ROBERT KAHN & VINT CERF</a></li>
+            <li><a href = "Page4.html">ROBERT METCALFE & DAVE FARBER</a></li>
+            <li><a href = "Page5.html">RAY TOMLINSON & PAUL MOCKAPETRIS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href = "AboutUs.html">ABOUT US</a>
+        <li/>
+      </ul>
+    </div>
+  </menu>
+  <div class = "blank"></div> <!--BLANK-->
+  <div class = "person_picture_frame"> <!--1 person picture-->
+    <img src = "images/FIG8.jpg" class = "person_picture" alt = "ROBERT METCALFE">
+  </div>
+  <div class = "person_information_frame1"> <!--1 person information-->
+    <h2 class = "person_information1">
+      ROBERT METCALFE
+    </h2>
+    <p class = "person_information1">
+      Robert Metcalfe was born in 1946 in Brooklyn, New York. His father was a test technician, who specialized in gyroscopes.
+      He graduated from MIT in 1969 with two S.B. degrees, one in electrical engineering and the other in industrial management
+      from the MIT Sloan School of Management. He then went to Harvard for graduate school,
+      earning his M.S. in applied mathematics in 1970 and his PhD in computer science (applied mathematics) in 1973.
+      Metcalfe has received various awards,
+      including the IEEE Medal of Honor and National Medal of Technology and Innovation for his work developing Ethernet technology.
+    </p>
+  </div>
+  <div class = "article_frame1">
+    <article class = "article_form1">
+      <p>
+        While working at Xerox, Robert Metcalfe developed a system using cables that allowed for transfer of more data over a
+        network.
+      </p>
+      <p>Metcalfe was working at PARC in 1973 when he and David Boggs invented Ethernet, initially a standard for
+        connecting computers over short distances.
+      </p>
+      <p>Metcalfe identifies the day Ethernet was born as May 22, 1973, the day he circulated a memo titled "Alto Ethernet" which
+        contained a rough schematic of how it would work.
+      </p>
+      <p>"That is the first time Ethernet appears as a word, as does the idea of using coax as ether, where the participating stations,
+        like in AlohaNet or ARPAnet, would inject their packets of data, they'd travel around at megabits per second, there would be collisions, and retransmissions, and back-off,"
+        Metcalfe explained</p>
+      <p> In 1980 he received the ACM Grace Hopper Award for his contributions to the development of local networks, specifically Ethernet.</p>
+
+    </article>
+  </div>
+  <div class = "person_picture_frame"> <!--2 person picture-->
+    <img src = "images/FIG8.1.jpg" class = "person_picture" alt = "DAVE FARBER">
+  </div>
+  <div class = "person_information_frame2"> <!--2 person information-->
+    <h2 class = "person_information2">
+      DAVE FARBER
+    </h2>
+    <p class = "person_information2">
+      Farber graduated from the Stevens Institute of Technology in 1956 and began an 11-year career at Bell Laboratories,
+      where he helped design the first electronic switching system (ESS-1) and the SNOBOL programming languages.
+      He subsequently held industry positions at the Rand Corporation and Scientific Data Systems,
+      followed by academic positions at the University of California, Irvine, and the University of Delaware.
+      Farber is an AAAS Fellow, IEEE Fellow, ACM Fellow, and recipient of the 1995 SIGCOMM Award for lifelong contributions
+      to computer communications.
+    </p>
+  </div>
+
+  <div class = "article_frame2">
+    <article class = "article_form2">
+      <p>Dave Farber of the University of Delaware revealed a project to build an inexpensive network using dial-up phone lines.
+        In 1982, the PhoneNet system was established and got connected to ARPANET and the first commercial network, Telenet.
+      </p>
+      <p>
+        At Irvine his research work was focused on creating the world's first operational distributed computer system.
+      </p>
+      <p>
+        While a member of the electrical engineering department of the University of Delaware, he helped conceive and organize
+        the major American research networks CSNET, NSFNet, and the National Research and Education Network (NREN).
+      </p>
+      <p>
+        He helped create the NSF/DARPA-funded Gigabit Network Test bed Initiative and served as the Chairman of the Gigabit Test
+        bed Coordinating Committee.
+      </p>
+      <p> Farber subsequently was appointed Alfred Fitler Moore Professor of Telecommunication Systems at the University of Pennsylvania
+      </p>
+
+    </article>
+  </div>
+  <div class = "blank"></div> <!--BLANK-->
+  <div> <!--footer-->
+    <footer id = "footer" class = "clearFix">
+      Tanvi Deepak Kapote & Chia-Jung Chu &#169;
+    </footer>
+  </div>
+</div>
+</body>
+</html>
