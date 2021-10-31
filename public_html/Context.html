@@ -13,6 +13,20 @@
       margin-left: auto;
       margin-right: auto;
     }
+    #top{
+      width: 960px;
+      height: 75px;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      border-top: 10px solid white;
+      border-bottom: 10px solid white;
+    }
+    #topblank{
+      width: 960px;
+      height: 90px;
+      float: left;
+    }
     #logo{
       width: 500px;
       height: 75px;
@@ -164,30 +178,32 @@
 </head>
 <body>
 <div id = "wrapper">
-  <div id = "logo"> <!--Topic picture-->
-    <a href = "Homepage.html"><img src = "images/internethistory_logo.png" alt = "logo" id = "logopic"></a>
-  </div>
-  <menu id = "Links_frame"> <!--Links-->
-    <div id = "Links">
-      <ul class = "drop-down-menu">
-        <li>
-          <a href = #>Internet History</a>
-          <ul>
-            <li><a href = "Context.html">Context</a></li>
-            <li><a href = "Context.html">Context</a></li>
-            <li><a href = "Context.html">Context</a></li>
-            <li><a href = "Context.html">Context</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href = "AboutUs.html">About Us</a>
-        <li/>
-      </ul>
+  <div id = "top">
+    <div id = "logo"> <!--Topic picture-->
+      <a href = "Homepage.html"><img src = "images/internethistory_logo.png" alt = "logo" id = "logopic"></a>
     </div>
-  </menu>
+    <menu id = "Links_frame"> <!--Links-->
+      <div id = "Links">
+        <ul class = "drop-down-menu">
+          <li>
+            <a href = #>Internet History</a>
+            <ul>
+              <li><a href = "Context.html">Context</a></li>
+              <li><a href = "Context.html">Context</a></li>
+              <li><a href = "Context.html">Context</a></li>
+              <li><a href = "Context.html">Context</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href = "AboutUs.html">About Us</a>
+          <li/>
+        </ul>
+      </div>
+    </menu>
+  </div>
 
 
-  <div class = "Blank"></div> <!--BLANK-->
+  <div id = "topblank"></div> <!--BLANK-->
 
 
   <div class = "person_picture_frame"> <!--1 person picture-->
