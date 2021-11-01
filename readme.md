@@ -5,7 +5,7 @@ History of the Internet
 
 Because we created this repo late, some changes and coding we made can not be seen from the repo's commit history.
 
-
+--------------------------------------------------------
 
 Chia-Jung Chu:
 
@@ -17,8 +17,7 @@ Adjust the frames and looks of the website
 
 Design and make the logo picture
 
-
-
+--------------------------------------------------------
 
 Tanvi Deepak Kapote:
 
