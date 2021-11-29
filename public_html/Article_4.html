@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTERNET & J.C.R LICKLIDER</title>
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <link rel = "icon" href = "images/icon.png" type = "image/x-icon"/>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #top{
+            width: 960px;
+            height: 75px;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+        }
+        #topblank{
+            width: 960px;
+            height: 90px;
+            float: left;
+        }
+        #logo{
+            width: 500px;
+            height: 75px;
+            float: left;
+            background-color: #a9dcd8;
+            margin: 0;
+            text-align: right;
+        }
+        #logopic{
+            float: left;
+        }
+        .internet_pic{
+            width: 220px;
+            height: 220px;
+        }
+        #footer{
+            text-align: center;
+        }
+        .clearFix{
+            clear: both;
+        }
+        #Links_frame{
+            width: 420px;
+            height: 75px;
+            float: right;
+            background-color: #a9dcd8;
+            margin: 0;
+            text-align: right;
+        }
+        #Links{
+            margin-top: 32px;
+            margin-right: 1px;
+        }
+        .blank{
+            width: 950px;
+            height: 40px;
+            float: right;
+            background-color: #ffffff;
+            margin: 0;
+        }
+        .person_picture_frame{
+            width: 220px;
+            height: 220px;
+            float: left;
+            border: 5px solid white;
+            background-color: #ffffff;
+        }
+        .person_picture{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            border: 1px solid rgb(122, 161, 158);
+            margin-top: 55px;
+        }
+        .person_information_frame1{
+            width: 720px;
+            height: 220px;
+            float: left;
+            background-color: #c6e7e4;
+            border: 5px solid white;
+        }
+        .person_information1{
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-right: 150px;
+            color: #224239;
+            font-family: serif;
+        }
+        .person_information_frame2{
+            width: 720px;
+            height: 335px;
+            float: left;
+            background-color: #c6e7e4;
+            border: 5px solid white;
+        }
+        .person_information2{
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 150px;
+            color: #224239;
+            font-family: serif;
+        }
+        .article_frame1{
+            width: 950px;
+            height: 410px;
+            float: left;
+            background-color: #c6e7e4;
+            border: 5px solid white;
+        }
+        .article_form1{
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 150px;
+            color: #467064;
+            font-family: serif;
+            font-size: 18px;
+        }
+        .article_frame2{
+            width: 950px;
+            height: 340px;
+            float: left;
+            background-color: #c6e7e4;
+            border: 5px solid white;
+        }
+        .article_form2{
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 150px;
+            color: #467064;
+            font-family: serif;
+            font-size: 18px;
+        }
+        #footer{
+            text-align: center;
+        }
+        .clearFix{
+            clear: both;
+        }
+
+        /*------------------------BUTTON---------------------------*/
+        ul { /* 取消ul預設的內縮及樣式 */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul.drop-down-menu {
+            border: #ccc 1px solid;
+            display: inline-block;
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 13px;
+        }
+        ul.drop-down-menu li {
+            position: relative;
+            white-space: nowrap;
+            border-right: #ccc 1px solid;
+        }
+        ul.drop-down-menu > li:last-child {
+            border-right: none;
+        }
+        ul.drop-down-menu > li {
+            float: left; /* 只有第一層是靠左對齊*/
+        }
+        ul.drop-down-menu a {
+            background-color: #fff;
+            color: #333;
+            display: block;
+            padding: 0 30px;
+            text-decoration: none;
+            line-height: 40px;
+
+        }
+        ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+            background-color: #37a67f;
+            color: #fff;
+        }
+        ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+            background-color: #37a67f;
+            color: #fff;
+        }
+        ul.drop-down-menu ul {
+            border: #ccc 1px solid;
+            position: absolute;
+            z-index: 99;
+            left: -1px;
+            top: 100%;
+            min-width: 180px;
+        }
+        ul.drop-down-menu ul li {
+            border-bottom: #ccc 1px solid;
+        }
+        ul.drop-down-menu ul li:last-child {
+            border-bottom: none;
+        }
+        ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+            z-index: 999;
+            top: 10px;
+            left: 90%;
+        }
+        ul.drop-down-menu ul { /*隱藏次選單*/
+            display: none;
+        }
+        ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+            display: block;
+        }
+        /*------------------------BUTTON---------------------------*/
+
+    </style>
+
+</head>
+<body>
+<div id = "wrapper">
+    <div id = "top">
+        <div id = "logo"> <!--Topic picture-->
+            <a href = "index.html"><img src = "images/internethistory_logo.png" alt = "logo" id = "logopic"></a>
+        </div>
+        <menu id = "Links_frame"> <!--Links-->
+            <div id = "Links">
+                <ul class = "drop-down-menu">
+                    <li>
+                        <a href = #>INTERNET HISTORY</a>
+                        <ul>
+                            <li><a href = "Page1.html">INTERNET & J.C.R LICKLIDER</a></li>
+                            <li><a href = "Page2.html">LAWRENCE G. ROBERTS & LEONARD KLEINROCK</a></li>
+                            <li><a href = "Page3.html">ROBERT KAHN & VINT CERF</a></li>
+                            <li><a href = "Page4.html">ROBERT METCALFE & DAVE FARBER</a></li>
+                            <li><a href = "Page5.html">RAY TOMLINSON & PAUL MOCKAPETRIS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href = "AboutUs.html">ABOUT US</a>
+                    <li/>
+                </ul>
+            </div>
+        </menu>
+    </div>
+    <div id = "topblank"></div> <!--BLANK-->
+    <div class = "person_picture_frame"> <!--1 person picture-->
+        <img src = "images/FIG1.jpg" alt = "internet" class = "internet_pic">
+    </div>
+    <div class = "person_information_frame1"> <!--1 person information-->
+        <h2 class = "person_information1">
+            INTERNET
+        </h2>
+        <p class = "article_form1">
+            The Internet is a global network of billions of computers and other electronic devices.
+            With the Internet, it's possible to access almost any information, communicate with anyone else in the world, and do much more.
+            You can do all of this by connecting a computer to the Internet, which is also called going online.
+        </p>
+    </div>
+    <div class = "article_frame1">
+        <article class = "article_form1">
+            <p>
+                The Internet started in the 1960s as a way for government researchers to share information.
+            </p>
+            <p>
+                Computers in the '60s were large and immobile and in order to make use of information stored in any one computer, one had to either travel to the site of the computer or have magnetic computer tapes sent through the conventional postal system.
+            </p>
+            <p>
+                The Soviet Union's launch of the Sputnik satellite spurred the U.S. Defense Department to consider ways information could still be disseminated even after a nuclear attack.
+            </p>
+            <p>
+                This eventually led to the formation of the ARPANET (Advanced Research Projects Agency Network), the network that ultimately evolved into what we now know as the Internet
+            </p>
+            <p>
+                A scale model of the UNIVAC I (the name stood for Universal Automatic Computer) which was delivered to the Census Bureau in 1951. It weighed some 16,000 pounds, used 5,000 vacuum tubes, and could perform about 1,000 calculations per second. It was the first American commercial computer, as well as the first computer designed for business use.
+            </p>
+        </article>
+    </div>
+    <div class = "person_picture_frame"> <!--2 person picture-->
+        <img src="images/FIG3.jpg" class="person_picture" alt="J.C.R LICKLIDER">
+    </div>
+    <div class = "person_information_frame2"> <!--2 person information-->
+        <h2 class = "person_information2">
+            J.C.R LICKLIDER
+        </h2>
+        <p class = "article_form1">
+            Joseph Carl Robnett Licklider ( March 11, 1915 – June 26, 1990), known simply as J. C. R. or "Lick",
+            was an American psychologist and computer scientist who is considered among prominent figures in computer science
+            development and general computing history.
+            He is particularly remembered for being one of the first to foresee modern-style interactive computing and its application
+            to all manner of activities; and also as an Internet pioneer with an early vision of a worldwide computer network
+            long before it was built. He did much to initiate this by funding research which led to much of it, including today's
+            canonical graphical user interface, and the ARPANET, the direct predecessor to the Internet.
+        </p>
+    </div>
+
+    <div class = "article_frame2">
+        <article class = "article_form2">
+            <p>
+                Licklider became interested in information technology early in his career.
+                His ideas foretold of graphical computing, point-and-click interfaces, digital libraries, e-commerce, online banking,
+                and software that would exist on a network and migrate wherever it was needed.
+            </p>
+            <p>
+                In 1962, MIT computer scientist J.C.R. Licklider came up with the idea for a global computer network. He later shared his idea with colleagues at the U.S. Department of Defense Advanced Research Projects Agency (ARPA).
+            </p>
+            <p>
+                Licklider was instrumental in conceiving, funding and managing the research that led to modern personal computers and the Internet.
+            </p>
+            <p>
+                Much like Vannevar Bush's, Licklider's contribution to the development of the Internet consists of ideas,
+                not inventions.He foresaw the need for networked computers with easy user interfaces.
+            </p>
+        </article>
+    </div>
+    <div class = "blank"></div> <!--BLANK-->
+    <div> <!--footer-->
+        <footer id = "footer" class = "clearFix">
+            <a href = "https://github.com/Tanv08/IS601_project1" target="_blank" style = "color: #467064;">Tanvi Deepak Kapote &#169;</a>
+            <a href = "https://github.com/Laucherooo/IS601_project1" target="_blank" style = "color: #467064;">Chia-Jung Chu &#169;</a>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
