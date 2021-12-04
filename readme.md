@@ -3,7 +3,7 @@ IS601 project2
 
 [History of Internet](http://project2tanvi.eastus.azurecontainer.io)
 
-Because we created this repo late, some changes and coding we made can not be seen from the repo's commit history.
+
 
 ----------------------------------------------
 
