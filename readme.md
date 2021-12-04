@@ -1,5 +1,5 @@
-IS601 project1
-History of the Internet 
+IS601 project2
+
 
 [History of Internet](http://project2tanvi.eastus.azurecontainer.io)
 
